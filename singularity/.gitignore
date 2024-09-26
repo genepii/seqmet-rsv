@@ -1,0 +1,11 @@
+# Ignore everything in this directory
+*
+# Except these files
+!.gitignore
+!def/
+!hsv12/
+!hsv12/def/
+!rsv/
+!rsv/def/
+!def/*
+!rsv/def/*

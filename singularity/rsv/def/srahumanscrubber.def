@@ -1,0 +1,35 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+Stage: condabuild
+
+%files
+srahumanscrubber.yml /srahumanscrubber.yml
+
+%post
+/opt/conda/bin/conda install mamba -c conda-forge && \
+/opt/conda/bin/mamba env create -f /srahumanscrubber.yml #&& \
+conda list -n srahumanscrubber | grep -v "^#" | awk '{print "  - "$1"="$2}'
+
+Bootstrap: docker
+From: ncbi/sra-human-scrubber:2.0.0
+Stage: final
+
+%files from condabuild
+/opt/conda/envs/srahumanscrubber /opt/conda/envs/srahumanscrubber
+
+%environment
+export PATH=/opt/conda/envs/srahumanscrubber/bin:$PATH
+export JAVA_HOME=/opt/conda/envs/srahumanscrubber
+
+%help
+    SUMMARY
+    Singularity container made from the official Docker container.
+    KNOWN BUGS
+    None
+    USAGE
+    NCBI official human read removal tool (HRRT).
+
+%labels
+    Version 2.0.0
+    Author sib0.smb
+    Date 2022-09-26

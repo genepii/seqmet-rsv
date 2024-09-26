@@ -1,0 +1,8 @@
+NC001422|WG	RefSeq	CDS	51	221	.	+	0	ID=cds-NP_040706.1;Parent=gene-phiX174p04;Dbxref=Genbank:NP_040706.1,GeneID:2546403;Name=NP_040706.1;gbkey=CDS;locus_tag=phiX174p04;gene=K;protein_id=NP_040706.1;transl_table=11
+NC001422|WG	RefSeq	CDS	133	393	.	+	0	ID=cds-NP_040707.1;Parent=gene-phiX174p05;Dbxref=Genbank:NP_040707.1,GeneID:2546402;Name=NP_040707.1;Note=DNA maturation;gbkey=CDS;locus_tag=phiX174p05;gene=C;protein_id=NP_040707.1;transl_table=11
+NC001422|WG	RefSeq	CDS	1001	2284	.	+	0	ID=cds-NP_040711.1;Parent=rna-phiX174p06;Dbxref=Genbank:NP_040711.1,GeneID:2546408;Name=NP_040711.1;gbkey=CDS;locus_tag=phiX174p06;gene=F;protein_id=NP_040711.1;transl_table=11
+NC001422|WG	RefSeq	CDS	390	848	.	+	0	ID=cds-NP_040708.1;Parent=rna-phiX174p07;Dbxref=Genbank:NP_040708.1,GeneID:2546399;Name=NP_040708.1;gbkey=CDS;locus_tag=phiX174p07;gene=D;protein_id=NP_040708.1;transl_table=11
+NC001422|WG	RefSeq	CDS	568	843	.	+	0	ID=cds-NP_040709.1;Parent=gene-phiX174p08;Dbxref=Genbank:NP_040709.1,GeneID:2546400;Name=NP_040709.1;gbkey=CDS;locus_tag=phiX174p08;gene=E;protein_id=NP_040709.1;transl_table=11
+NC001422|WG	RefSeq	CDS	848	964	.	+	0	ID=cds-NP_040710.1;Parent=gene-phiX174p09;Dbxref=Genbank:NP_040710.1,GeneID:2546404;Name=NP_040710.1;Note=DNA condensation;gbkey=CDS;locus_tag=phiX174p09;gene=J;protein_id=NP_040710.1;transl_table=11
+NC001422|WG	RefSeq	CDS	2395	2922	.	+	0	ID=cds-NP_040712.1;Parent=gene-phiX174p10;Dbxref=Genbank:NP_040712.1,GeneID:2546401;Name=NP_040712.1;gbkey=CDS;locus_tag=phiX174p10;gene=G;protein_id=NP_040712.1;transl_table=11
+NC001422|WG	RefSeq	CDS	2931	3917	.	+	0	ID=cds-NP_040713.1;Parent=gene-phiX174p11;Dbxref=Genbank:NP_040713.1,GeneID:2546407;Name=NP_040713.1;gbkey=CDS;locus_tag=phiX174p11;gene=H;protein_id=NP_040713.1;transl_table=11

@@ -1,0 +1,28 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region KY654518.1 1 15277
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=208893
+KY654518|WG	Genbank	region	1	15277	.	+	.	ID=KY654518.1:1..15277;Dbxref=taxon:208893;collection-date=28-Jan-2013;country=Philippines;gbkey=Src;genome=genomic;genotype=ON1;isolate=TBp-13-044;mol_type=viral cRNA;nat-host=children
+KY654518|WG	Genbank	gene	99	518	.	+	.	ID=gene-NS1;Name=NS1;gbkey=Gene;gene=NS1;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	99	518	.	+	0	ID=cds-ARB66453.1;Parent=gene-NS1;Dbxref=NCBI_GP:ARB66453.1;Name=ARB66453.1;gbkey=CDS;gene=NS1;product=nonstructural protein 1;protein_id=ARB66453.1
+KY654518|WG	Genbank	gene	628	1002	.	+	.	ID=gene-NS2;Name=NS2;gbkey=Gene;gene=NS2;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	628	1002	.	+	0	ID=cds-ARB66454.1;Parent=gene-NS2;Dbxref=NCBI_GP:ARB66454.1;Name=ARB66454.1;gbkey=CDS;gene=NS2;product=nonstructural protein 2;protein_id=ARB66454.1
+KY654518|WG	Genbank	gene	1140	2315	.	+	.	ID=gene-N;Name=N;gbkey=Gene;gene=N;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	1140	2315	.	+	0	ID=cds-ARB66455.1;Parent=gene-N;Dbxref=NCBI_GP:ARB66455.1;Name=ARB66455.1;gbkey=CDS;gene=N;product=nucleocapsid protein;protein_id=ARB66455.1
+KY654518|WG	Genbank	gene	2347	3072	.	+	.	ID=gene-P;Name=P;gbkey=Gene;gene=P;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	2347	3072	.	+	0	ID=cds-ARB66456.1;Parent=gene-P;Dbxref=NCBI_GP:ARB66456.1;Name=ARB66456.1;gbkey=CDS;gene=P;product=phosphoprotein;protein_id=ARB66456.1
+KY654518|WG	Genbank	gene	3255	4025	.	+	.	ID=gene-M;Name=M;gbkey=Gene;gene=M;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	3255	4025	.	+	0	ID=cds-ARB66457.1;Parent=gene-M;Dbxref=NCBI_GP:ARB66457.1;Name=ARB66457.1;gbkey=CDS;gene=M;product=matrix protein;protein_id=ARB66457.1
+KY654518|WG	Genbank	gene	4295	4489	.	+	.	ID=gene-SH;Name=SH;gbkey=Gene;gene=SH;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	4295	4489	.	+	0	ID=cds-ARB66458.1;Parent=gene-SH;Dbxref=NCBI_GP:ARB66458.1;Name=ARB66458.1;gbkey=CDS;gene=SH;product=small hydrophobic protein;protein_id=ARB66458.1
+KY654518|WG	Genbank	gene	4681	5646	.	+	.	ID=gene-G;Name=G;gbkey=Gene;gene=G;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	4681	5646	.	+	0	ID=cds-ARB66459.1;Parent=gene-G;Dbxref=NCBI_GP:ARB66459.1;Name=ARB66459.1;gbkey=CDS;gene=G;product=attachment glycoprotein;protein_id=ARB66459.1
+KY654518|WG	Genbank	gene	5726	7450	.	+	.	ID=gene-F;Name=F;gbkey=Gene;gene=F;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	5726	7450	.	+	0	ID=cds-ARB66460.1;Parent=gene-F;Dbxref=NCBI_GP:ARB66460.1;Name=ARB66460.1;gbkey=CDS;gene=F;product=fusion protein;protein_id=ARB66460.1
+KY654518|WG	Genbank	gene	7669	8253	.	+	.	ID=gene-M2-1;Name=M2-1;gbkey=Gene;gene=M2-1;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	7669	8253	.	+	0	ID=cds-ARB66461.1;Parent=gene-M2-1;Dbxref=NCBI_GP:ARB66461.1;Name=ARB66461.1;gbkey=CDS;gene=M2-1;product=M2-1 protein;protein_id=ARB66461.1
+KY654518|WG	Genbank	gene	8228	8494	.	+	.	ID=gene-M2-2;Name=M2-2;gbkey=Gene;gene=M2-2;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	8228	8494	.	+	0	ID=cds-ARB66462.1;Parent=gene-M2-2;Dbxref=NCBI_GP:ARB66462.1;Name=ARB66462.1;gbkey=CDS;gene=M2-2;product=M2-2 protein;protein_id=ARB66462.1
+KY654518|WG	Genbank	gene	8561	15058	.	+	.	ID=gene-L;Name=L;gbkey=Gene;gene=L;gene_biotype=protein_coding
+KY654518|WG	Genbank	CDS	8561	15058	.	+	0	ID=cds-ARB66463.1;Parent=gene-L;Dbxref=NCBI_GP:ARB66463.1;Name=ARB66463.1;gbkey=CDS;gene=L;product=large polymerase;protein_id=ARB66463.1

@@ -1,0 +1,492 @@
+change	ABSCLADE__	ININT__	recombinant__	__B	__B.2	__B.3	__B.D	__B.D.1	__B.D.1.1	__B.D.3	__B.D.4	__B.D.4.1	__B.D.4.1.1	__B.D.E.1	__B.D.E.2	__B.D.E.3	__B.D.E.4
+F:L4					M												
+F:I5												V					
+F:H6									R						N		
+F:R7				K	K												
+F:S8					L												
+F:I11						V											
+F:F12				L									L	I			
+F:L15						I	F	F									
+F:A16												V					
+F:A19							T		T							V	
+F:R42														K			
+F:L45				F	F	F	F	F	F								
+F:K65				Q													
+F:K68												Q					
+F:T91									I								
+F:M97				T													
+F:V103				A	A	T	A	A	A	A							
+F:A111															V		
+F:Y114				H													
+F:M115				T							V						
+F:Y117				H													
+F:I119					V												
+F:N120									S								
+F:K123										G							
+F:N124										S							
+F:L125							P	P	P								
+F:V127									A								
+F:S130																R	
+F:N169									S								
+F:Q172				L	L	L	L	L	L	L							
+F:L173				S	S	S	A	S	S	S	S						
+F:S190													N	N	N		
+F:R191				K	K	K	K	K	K	K	K	K					
+F:N201				T							S						
+F:M206				I	I	I	I	I	I	I	I	I					
+F:R209				K	Q	Q	Q	Q	Q	Q	E	Q					
+F:S211													N	N			
+F:T234					N												
+F:S276													N				
+F:V278				A													
+F:I291									V								
+F:P312				H							H						
+F:E328								G									
+F:S380				N													
+F:D385																N	
+F:S389														P			
+F:E463													D				
+F:E472					D												
+F:R507									H								
+F:T518						A											
+F:M526																V	
+F:A529				T	T		V	V									
+F:I542				M													
+F:K551						R											
+F:A552									V								
+G:N4				H	H						T						
+G:N6				S													
+G:R8								C									
+G:A10						T											
+G:T12								A	A								
+G:K15									R								
+G:K32				R	R	R											
+G:V45				I	A												
+G:I60								V									T
+G:V69								A									
+G:T70								A									
+G:L71				P													
+G:A74				V	V	V	V	V	I	V	V	V	V	V	V	V	V
+G:T75								S	S								
+G:Q77						S											
+G:E84				G													
+G:I87								T		T							
+G:T89				S					A								
+G:Y90												H					
+G:L91					P	P						F				P	
+G:Q93				H													
+G:V94								I									
+G:S95				L	P												
+G:E97				D													
+G:R98				W		K	K						K				
+G:S100				G									G	G			
+G:P101				S	S												
+G:K103				I			N		N								
+G:Q104																H	
+G:A107				T	T	T	T	T	T	T	I						
+G:P109				S	S	S		S									
+G:P110									S								
+G:I111					T												
+G:H112				Q													
+G:N114					S												
+G:A116				T		V											
+G:I118					T												
+G:T122									A								
+G:K123									E								
+G:S124				P													
+G:E125															D		
+G:T126				K													
+G:H127								P									
+G:H128																Y	
+G:T129									A								
+G:T130									A								
+G:T131				A	A	A	E	A	A	A	A	A	A	A			
+G:T133				A	A												
+G:K134				N													
+G:G135				S	S							S				S	S
+G:T136				R	R	R	R	R	R	R	R						
+G:I137				A	T	T	T	T	A	T	T	T	T	T	T		
+G:S138				T	T	T	T	Y									F
+G:T139														I			
+G:P140				S	S												
+G:T141																K	
+G:N143				T	T	T			S		K						
+G:N144					K												
+G:K145				R					R								
+G:K149									R								
+G:P150				S													
+G:R151										H					L		
+G:P152				S	L												
+G:K153							R										
+G:N154						I											
+G:P155				L													
+G:K157									R								
+G:N176								S							S		
+G:T198				I	I	I	I	V	I	I							
+G:N202									T								
+G:P204								T	T								
+G:P205				I	T	T	T										L
+G:T206				V													
+G:N210				T													
+G:R212				K													
+G:D213					A	G											
+G:P214						S					L	L		S			
+G:L217				P	P	S	P	P	P	P	P	P	P		P		
+G:T220				M		A											
+G:P221				M	T	L	L				L		L	L			
+G:K222				E		R											
+G:E224								D	D								
+G:T225				I				P				N					
+G:I227				T	T	T		T	T				T				
+G:N228				Y		D		D									
+G:P229													L				
+G:K231				R													
+G:K232						E											
+G:P233				L	L												
+G:P235				L	L	F											
+G:K236					E												
+G:T237											I						
+G:E239				G													
+G:R240				G													
+G:T242				N													
+G:P245				L	S	S											
+G:Q246						R											
+G:S247								P									
+G:T248						N									S		
+G:V249					-								A				
+G:L250				I	-												
+G:D251					-												
+G:I252				-	-	-	T	T	T	T	T	T	T	T	T	T	
+G:T253				-	-	-											
+G:T254				-	-	-											
+G:S255				-	-	-							P				
+G:K256				-	-	-								N			
+G:H257				-	-	-											
+G:T258				-	-	-											
+G:E259				-	-	-											
+G:R260				-	-	-		G									
+G:D261				-	-	-											
+G:T262				-	-	-											
+G:S263				-	-	-					R						
+G:T264				-	-	-											
+G:S265				-	-	-	L	L			P	P	P	P			
+G:Q266				-	-	-											
+G:S267				-	-	-			P								
+G:I268				-	-	-	T	T	T	T	T	T	T	T	T		
+G:A269				-	-	-	V	V	V		V	V	V	V	V		
+G:L270				-	-	-							P				
+G:D271				-	-	-											
+G:T272											K						
+G:T273				I				A				I					
+G:T274															A		
+G:S275					L	P								P			
+G:K276					E	D		E									
+G:T278											I						
+G:T279				I	V	V	I	V	I	I	I						
+G:Q280				P					R								
+G:L284				F			F	F				P					
+G:Y285				H	H	H	H	H	H	H	H	H	H	H	H		H
+G:S286				P													
+G:T287				I													
+G:I288				T	T	T	T	T	T	T	T	T					
+G:P289				F		L	L										
+G:E290								G	G								
+G:N291								T									
+G:T292									I								
+G:P293								T									S
+G:N294				S													
+G:S295				F			F										
+G:T298				I				A									
+G:P299										S						S	
+G:T300				A	A						A						A
+G:A301												T					
+G:S302				T													
+G:E303							D		K		K						G
+G:P304				A							S						
+G:S305				F													
+G:S307					P												
+G:I310				T	T	T	T	T	T	T	N	T	T				
+G:*311				Q	Q	Q	Q	Q			Q	Q	Q	Q	Q	Q	
+Ins:973					A												
+Ins:2284				A												A	
+Ins:3201						A										AGAA	
+Ins:3204										GAA							
+Ins:4034				A	A												
+Ins:5119				CCAAAA	CCAAAA	CCAAAA											
+Ins:7408															A		
+Ins:7463				A													
+Ins:7581				A	A												
+Ins:7582				C	C	C											
+Ins:15088																N	
+Ins:15089																NNNN	A
+Ins:15092				ATAT									ATAT	ATAT			
+Ins:15222				T			TTTTTTCTCGT	TTTTTTTCTCGT	TTTT	TTTTTTTCTCGT	TTTTTTTCTCGT		TTTTTTTCTCGT	TTTTTTTCTCGT	TTTTTTTCTC	TTTTTTTCTCGT	
+L:I4					T												
+L:S8				N	N	N											
+L:I56				L	L	L	L	L	L	L	L						
+L:M59								I	I	T							
+L:I66				V													
+L:Y74				F													
+L:Q102							T										
+L:I113						V											
+L:N129				S													
+L:R138									K								
+L:V139									A								
+L:G146				D													
+L:E148				G													
+L:V151				A													
+L:V164																	M
+L:N166					S	S											
+L:S169														P			
+L:Y170										H							
+L:N176				D	S							D					
+L:Y177				H	H	H											
+L:S178				T													
+L:I183									S			N					
+L:N184				T	T							S					
+L:C195				Y													
+L:I205										M							
+L:I232				T													
+L:N247						S											
+L:Y254				H		H											
+L:V308				A													
+L:V309																	L
+L:K354				E													
+L:D374				N	N	N											
+L:L376									I								
+L:V379				I													
+L:I445				V													
+L:K529				R													
+L:S560				P													
+L:K570													R	R			
+L:V715				I	I	I	I	I	I	I	I						
+L:L798																	I
+L:I824				M					T								M
+L:G850																	S
+L:R942																	Q
+L:N943				S													
+L:L946					I												
+L:N948				H													
+L:K960				R													
+L:T973				M	M	M											
+L:L1036				M													
+L:V1043				I	I												
+L:I1087						T											
+L:I1177				M	M												
+L:P1181										S							
+L:A1238					T												
+L:G1250				S	S	S		S	S						S		S
+L:D1430									G								
+L:A1465											T						
+L:H1471				Q	N												
+L:A1479				V	V	V	V	V	V	V	V	V					
+L:Y1485										F							
+L:A1489				D						V							T
+L:I1529												L					
+L:V1533									I		F						
+L:R1547				K	K												
+L:E1555				A													
+L:I1588				L						L							
+L:N1593								S	S								
+L:T1596							I								A		
+L:S1597						G											
+L:H1599				R	R												
+L:R1614				C													
+L:H1632															N		
+L:K1661				N													
+L:T1670				I													
+L:I1691										V							
+L:D1700				N	N												
+L:N1701				Y													
+L:H1707															N		
+L:A1712				T	T	T	T	T	T	T	T						
+L:V1716				M	M	M	I	I	I	I	I	I					
+L:L1718												S					
+L:I1719											T						
+L:V1721											A						
+L:N1724				D													
+L:R1726				S	S	S											
+L:P1729				T	S	S					S						
+L:K1730				E													
+L:F1731				S													
+L:C1732						F											Y
+L:S1734						G											
+L:G1735				R													
+L:S1736				N	N	N	N	N	N	N	N						
+L:E1738				K													
+L:M1740					I												
+L:T1742					M		M										
+L:S1746					T												
+L:N1747					S												
+L:M1749								I									I
+L:H1750																	L
+L:R1759					K									K			
+L:F1760				L													
+L:R1764				K	K												
+L:I1773					N												
+L:V1775				M											M		
+L:R1778					K												
+L:E1787				A	A	A						G					
+L:T1794					I												
+L:H1798				R													
+L:L1802									F								
+L:A1807																	T
+L:F1821										L							
+L:E1835										G							
+L:K1844				R													
+L:D1845				N													
+L:S1847															N		
+L:C1848											S						
+L:I1924				L													
+L:I1930								V									
+L:V1941																	I
+L:A1943							T										
+L:I1950				T													
+L:V1965				I							I			I		A	
+L:F1982												L					
+L:D1985											N						
+L:T1987				I	I	I	I	I	I	I	I	I	I	I	I	I	I
+L:I1989				T													
+L:V2008					I												
+L:A2014				S													
+L:I2016				V													
+L:D2021				N													
+L:V2022									I								
+L:I2042				T	T												
+L:Y2060								H									
+L:N2065				K	K	K											
+L:H2112								Y									
+L:N2115				Y													
+L:A2119				T													
+L:Y2160					F												
+L:L2162						I											
+L:P2163				S													
+L:N2164								S	S								
+M:N56							S										
+M:I62															V		
+M:N87				S													
+M:T89				I	I	I		I	I								
+M:T136															A		
+M:R157				K													
+M:S166					P												
+M:Y215				F													
+M:Y237				F													
+M2-1:P32				S	S	H											
+M2-1:M42					I										I		
+M2-1:S108											G						
+M2-1:K113						R											
+M2-1:L114				Q													
+M2-1:N121				S													
+M2-1:I125									V								
+M2-1:I135									T								
+M2-1:E136									D								
+M2-1:S142				N	N	N	N				N						
+M2-1:S170				G													
+M2-1:T172					I												
+M2-1:S174				N													
+M2-1:P176				S													
+M2-1:I181				V	V	V	A	V	V	V							
+M2-1:S182				N	N						N						
+M2-1:Q184				H													
+M2-1:T188										P							
+M2-2:I2				T	T	T	T	T	T	T	T	T	T	T	T	T	T
+M2-2:K3						R				N							
+M2-2:E25													K				
+M2-2:S26							N		N								
+M2-2:M27													T	T			
+M2-2:I28				V	V												
+M2-2:T30				I													
+M2-2:D35				N	N									N			
+M2-2:F39									L								
+M2-2:N40					S												
+M2-2:H43					Y					Y							
+M2-2:N46											S						
+M2-2:H47																	Y
+M2-2:C49					R			G	W				F	F			
+M2-2:L50									S								
+M2-2:L51																S	
+M2-2:H53					N												
+M2-2:I54				M													
+M2-2:D67									E								
+M2-2:A68				T		T											
+M2-2:H75																Y	
+M2-2:I82				V	T												
+M2-2:V85					I												
+N:A57				V													
+N:K91				R													
+N:V97				I	I	I	I	I	I	I	I	I	I	I	I	I	I
+N:T99									S								
+N:V113									I								
+N:V125									I								
+N:I129				V													
+N:I163						M											
+N:I194				T													
+N:N207				T													
+N:Y216				H	H	H	H	H	H	H	H						
+N:F243														L			
+N:E282				D													
+N:K293									R								
+N:I303															V		
+N:T372				A	A	A											
+N:H380					N												
+NS1:C3				F													
+NS1:I27				M													
+NS1:D32																	N
+NS1:T45				A	A	A											
+NS1:V59				I				I									
+NS1:S63								N									
+NS1:V65				A													
+NS1:V72				I													
+NS1:I105				M	M	M											
+NS1:D124				N	N												
+NS1:M126				I													
+NS1:L137						H											
+NS1:H138				K	D	N											
+NS1:S139				P													
+NS2:M1																V	
+NS2:S2										N							
+NS2:T3				I		I											
+NS2:T4				A						K							
+NS2:N5														K			
+NS2:D6				N			N										
+NS2:T8								N									
+NS2:R12						G											
+NS2:R19					K												
+NS2:D24				E													
+NS2:I26								T	T								
+NS2:T28				I	I	I											
+NS2:K32							R										
+NS2:R50						K					K						
+NS2:K72											R						
+NS2:K80										T		R					
+NS2:T82								S	S		S						
+NS2:I97				V		V											
+NS2:N123				K													
+P:E2								D									
+P:P34				S													
+P:T60												I					
+P:N61				T											S		T
+P:I62				V		T	T										
+P:I63				N				V	V								
+P:T66				I													
+P:S67				N													
+P:A69								T									
+P:S71				N													
+P:T72				A													
+P:P73				S													
+P:T75				A													
+P:A77				T				T									
+P:P80								S									
+P:L91															P		
+P:A133								V									
+P:S215					P												
+SH:G2				V													
+SH:S29					F												
+SH:I36					V												
+SH:N42				K													
+SH:I49				A	A	T	T	T	T	T							
+SH:C51				Y			F	Y									
+SH:K53					N												
+SH:Q57				L	L												
+SH:Y61					H												
+SH:D64				N	N	N	N	N	N	N	N	N					

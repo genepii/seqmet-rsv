@@ -1,0 +1,52 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+Stage: condabuild
+
+%files
+denovo.yml /denovo.yml
+
+%post
+/opt/conda/bin/conda install mamba -c conda-forge && \
+/opt/conda/bin/mamba env create -f /denovo.yml #&& \
+conda list -n denovo | grep -v "^#" | awk '{print "  - "$1"="$2}'
+
+Bootstrap: docker
+From: debian:buster-slim
+Stage: final
+
+%files from condabuild
+/opt/conda/envs/denovo /opt/conda/envs/denovo
+
+%environment
+export PATH=/opt/conda/envs/denovo/bin:$PATH
+export JAVA_HOME=/opt/conda/envs/denovo
+
+%post
+apt-get update
+mkdir -p /usr/share/man/man1
+dpkg --configure -a
+apt-get install -f
+apt-get install -y wget git procps libxml2-dev libssl-dev curl libcurl4-openssl-dev python2.7 zip build-essential zlib1g-dev
+apt-get clean -y
+export PATH=/opt/conda/envs/denovo/bin:$PATH
+wget http://kmergenie.bx.psu.edu/kmergenie-1.7051.tar.gz
+tar -zxvf kmergenie-1.7051.tar.gz
+rm -rf kmergenie-1.7051.tar.gz
+cd kmergenie-1.7051
+make
+python setup.py install
+make install
+cd /opt/
+
+%help
+    SUMMARY
+    Container with tools necessary for the denovo nextflow pipeline seqmet.
+    KNOWN BUGS
+    None
+    USAGE
+    Called by the denovo nextflow pipeline seqmet.
+
+%labels
+    Version 0.0.4
+    Author sib0.smb
+    Date 2022-10-27

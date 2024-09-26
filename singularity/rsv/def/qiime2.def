@@ -1,0 +1,66 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+Stage: condabuild
+
+%files
+qiime2.yml /qiime2.yml
+
+%post
+/opt/conda/bin/conda install mamba -c conda-forge && \
+/opt/conda/bin/mamba env create -f /qiime2.yml #&& \
+conda list -n qiime2 | grep -v "^#" | awk '{print "  - "$1"="$2}'
+
+Bootstrap: docker
+From: centos:7
+Stage: final
+
+%files from condabuild
+/opt/conda/envs/qiime2 /opt/conda/envs/qiime2
+
+%environment
+export PATH=/opt/conda/envs/qiime2/bin:$PATH
+export JAVA_HOME=/opt/conda/envs/qiime2
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8
+
+%post
+yum update -y
+yum groupinstall -y @"Development Tools"
+yum install -y epel-release centos-release-scl
+yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum update -y
+yum install -y git curl which python27 nano vim htop wget tar bzip2 gzip lz4 lzma mesa-libGL mesa-libGLU libgit2-devel openssl-devel libcurl-devel libxml2-devel libuuid-devel bzip2-devel ncurses-devel cmake libjpeg-turbo-devel libpng-devel
+export PATH=/opt/conda/envs/qiime2/bin:$PATH
+curl -O https://cdn.rstudio.com/r/centos-7/pkgs/R-4.1.3-1-1.x86_64.rpm
+yum install -y R-4.1.3-1-1.x86_64.rpm
+ln -s /opt/R/4.1.3/bin/R /usr/bin/R
+mkdir -p /usr/share/doc/R-4.1.3/html/
+R -e 'install.packages("remotes", repos="https://cloud.r-project.org")'
+R -e 'library(remotes); remotes::install_version("devtools", version = "2.4.3", repos="https://cloud.r-project.org")'
+R -e 'devtools::install_github("benjjneb/decontam", ref="v1.12")'
+R -e 'remotes::install_github("AnneChao/SpadeR@641c1def57de95142407803ee8b283a269115c8c")'
+R -e 'library(devtools); install_version("BiocManager", version = "1.30.18", repos="https://cloud.r-project.org")'
+R -e 'library(BiocManager); BiocManager::install("AnnotationDbi", version = "3.14")'
+R -e 'library(BiocManager); BiocManager::install("phyloseq", version = "3.14")'
+R -e 'library(BiocManager); BiocManager::install("ggplot2", version = "3.14")'
+R -e 'library(BiocManager); BiocManager::install("edgeR", version = "3.14")'
+R -e 'library(BiocManager); BiocManager::install("metagenomeSeq", version = "3.14")'
+R -e 'library(BiocManager); BiocManager::install("DESeq2", version = "3.14")'
+R -e 'library(devtools); install_version("propr", version = "4.2.6", repos="https://cloud.r-project.org")'
+python3 -m pip install git+https://github.com/lozuponelab/q2-SCNIC.git@2020.10
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8
+qiime dev refresh-cache
+
+%help
+SUMMARY
+Container with tools necessary for the HCL metagenomic nextflow pipeline.
+KNOWN BUGS
+None
+USAGE
+Called by the seqmet nextflow pipeline.
+
+%labels
+Version 2022.8
+Author sib0.smb
+Date 2022-10-07

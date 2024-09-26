@@ -1,0 +1,412 @@
+{
+    "version" : "2e631b832eec8db62e13fd51d27a06adfb6630f8",
+    
+    "fastq" : [
+        "data/Plrevelo-024018214201_S21_R1.fastq.gz",
+        "data/Plrevelo-024018214201_S21_R2.fastq.gz",
+        "data/Plrevelo-024112595301_S20_R1.fastq.gz",
+        "data/Plrevelo-024112595301_S20_R2.fastq.gz",
+        "data/Plrevelo-024113734901_S22_R1.fastq.gz",
+        "data/Plrevelo-024113734901_S22_R2.fastq.gz",
+        "data/Plrevelo-024118804501_S23_R1.fastq.gz",
+        "data/Plrevelo-024118804501_S23_R2.fastq.gz",
+        "data/Plrevelo-Ntmax_S24_R1.fastq.gz",
+        "data/Plrevelo-Ntmax_S24_R2.fastq.gz",
+        "data/Plrevelo-Tlib_S19_R1.fastq.gz",
+        "data/Plrevelo-Tlib_S19_R2.fastq.gz"               
+    ],
+    
+    "tmp" : "/srv/scratch/iai/seqmet/tmp/",
+    "empty" : "/srv/scratch/iai/seqmet/db/empty.txt",
+    "metadata" : "/srv/scratch/iai/seqmet/metadata/000000_ILL_seqmet_denovo_rsv.csv",
+    "result" : "/srv/scratch/iai/seqmet/result/000000_ILL_seqmet_denovo_rsv/",
+    "sequencer" : "",
+    "proto" : "",
+    "workflow" : "denovo",
+    "readtype" : "paired-end",
+    "dehost" : true,
+    "downsample" : false,
+    "assign" : "kraken2",
+    "filter" : "",
+    "trim" : true,
+    "kmergenie" : false,
+    "assembler" : "spades",
+    "drep" : false,
+    "premap" : "bwamem",
+    "map" : "bwamem",
+    "rmdup" : false,
+    "capdepth" : true,
+    "realign" : true,
+    "clipbam" : "ampliconclip",
+    "fixbam" : true,
+    "calling" : "bcftools",
+    "refmode" : "list",
+    "premap_ref" : [
+        "/srv/scratch/iai/seqmet/db/reference/rsv/premap/KM517573.fna",
+        "/srv/scratch/iai/seqmet/db/reference/rsv/premap/KY654518.fna"
+    ],
+    "premap_poscref" : [
+        "/srv/scratch/iai/seqmet/db/reference/control/ms2p/NC001417/NC001417.fna",
+        "/srv/scratch/iai/seqmet/db/reference/control/phix174/NC001422/NC001422.fna"
+    ],
+    "premap_verifref" : [
+        "/srv/scratch/iai/seqmet/db/reference/rsv/premap/KM517573.fna",
+        "/srv/scratch/iai/seqmet/db/reference/rsv/premap/KY654518.fna"
+    ],
+    "map_ref" : [
+        "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573.fna",
+        "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518.fna"
+    ],
+    
+    "interleave_bbmap" : {
+        "todo" : 1
+    },
+    
+    "qc_fastqc" : {
+        "todo" : 1
+    },
+    
+    "qc_fastqscreen" : {
+        "todo" : 1,
+        "conf" : "/srv/scratch/iai/seqmet/db/fastqscreen/fastq_screen.conf"
+    },
+    
+    "filter_srahumanscrubber" : {
+        "todo" : 1,
+        "db" : "/opt/scrubber/data/human_filter.db"
+    },
+    
+    "merge_bbmerge" : {
+        "todo" : 1
+    },
+       
+    "assign_kraken2" : {
+        "todo" : 1,
+        "db" : "/srv/scratch/iai/seqmet/db/kraken2/hclvirdb_221121",
+        "confidence" : 0.1,
+        "minimum-hit-groups" : 2,
+        "taxid_list" : "",
+        "taxa" : " Pneumoviridae;",
+        "ncbitax2lin": "/srv/scratch/iai/seqmet/db/ncbitax2lin/ncbitax2lin-221121_sorted.tsv"
+    },
+    
+    "assign_bracken" : {
+        "todo" : 1,
+        "db" : "/srv/scratch/iai/seqmet/db/kraken2/hclvirdb_221121",
+        "read_length" : 100,
+        "level" : "S",
+        "threshold" : 10,
+        "ncbitax2lin": "/srv/scratch/iai/seqmet/db/ncbitax2lin/ncbitax2lin-221121_sorted.tsv"
+    },
+    
+    "assign_tax2lin" : {
+        "todo" : 1,
+        "ncbitax2lin": "/srv/scratch/iai/seqmet/db/ncbitax2lin/ncbitax2lin-221121_sorted.tsv"
+    },
+    
+    "import_q2table" : {
+        "todo" : 1
+    },
+              
+    "downsample_bbmap" : {
+        "todo" : 1,
+        "samplereadstarget" : 1350000,
+        "encoding" : "33"
+    },
+    
+    "trim_cutadapt" : {
+        "todo" : 1,
+        "minimum_length" : 80,
+        "error_rate" : 0,
+        "quality" : 20,
+        "overlap" : 1,
+        "adapter_f" : [],
+        "adapter_r" : [],
+        "front_f" : ["ACTTTGTGTTTGA","TGCTCTTCCGATC"],
+        "front_r" : ["ACTTTGTGTTTGA","TGCTCTTCCGATC"],
+        "anywhere_f" : [],
+        "anywhere_r" : []
+    },
+        
+    "premap_bwamem" : {
+        "todo" : 1,
+        "A" : 2,
+        "B" : 4,
+        "O" : 16,
+        "E" : 1,
+        "L" : 5,
+        "U" : 9,
+        "T" : 1,
+        "min_depth" : 10
+    },
+            
+    "premap_verif" : {
+        "todo" : 1,
+        "args" : "--end-to-end --very-fast",
+        "k" : 0,
+        "score-min" : "L,-0.2,-0.2",
+        "dpad" : 15,
+        "gbar" : 4,
+        "ma" : 0,
+        "mp" : "6,2",
+        "rdg" : "5,3",
+        "rfg" : "5,3",
+        "min_depth" : 10
+    },
+        
+    "map_bwamem" : {
+        "todo" : 1,
+        "A" : 2,
+        "B" : 4,
+        "O" : 16,
+        "E" : 1,
+        "L" : 5,
+        "U" : 9,
+        "T" : 1,
+        "max_match" : 2,
+        "min_cov" : 0.5
+    },    
+    
+    "postmap_picard" : {
+        "todo" : 1
+    },
+    
+    "capdepth_jvarkit" : {
+        "todo" : 1,
+        "max_depth" : 10000
+    },
+    
+    "postmap_abra2" : {
+        "todo" : 1,
+        "args" : "--sa --cons --no-edge-ci",
+        "amq" : -1,
+        "ca" : "10,1",
+        "mac" : 64,
+        "mad" : 1000,
+        "mapq" : 1,
+        "maxn" : 150000,
+        "mbq" : 20,
+        "mcl" : -1,
+        "mcr" : 1000000,
+        "mer" : 0.01,
+        "mmr" : 0.05,
+        "mnf" : 1,
+        "mrn" : 0.1,
+        "mrr" : 1000000,
+        "msr" : 1000000,
+        "rcf" : 0.05
+    },
+    
+    "postmap_ampliconclip" : {
+        "todo" : 1,
+        "primer" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/WG/primer.bed"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/WG/primer.bed"]
+        ],
+        "filter_len" : 30,
+        "tolerance" : 0
+    },
+    
+    "postmap_fixbam" : {
+        "todo" : 1
+    },    
+    
+    "callvar_bcftools" : {
+        "todo" : 1,
+        "toexclude" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/WG/toexclude.vcf"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/WG/toexclude.vcf"]
+        ],
+        "mode" : "illumina",
+        "annotate" : "INFO/AD,INFO/ADF,INFO/ADR,FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/SP",
+        "max-depth" : 20000,
+        "min-MQ" : 0,
+        "min-BQ" : 0,
+        "max-BQ" : 60,
+        "ambig-reads" : "drop",
+        "ext-prob" : 20,
+        "gap-frac" : 0.01,
+        "indel-bias" : 1.0,
+        "indel-size" : 5000,
+        "max-idepth" : 10000000,
+        "min-ireads" : 2,
+        "max-read-len" : 500,
+        "open-prob" : 40,
+        "ploidy" : 1,
+        "prior" : 0,
+        "bcftools_filter_snps" : "INFO/DP > 9 & ((INFO/ADF[1]>=2 & INFO/ADR[1]>=2) | AF >= 0.9)",
+        "bcftools_filter_complex" : "INFO/DP > 9 & ((INFO/ADF[1]>=2 & INFO/ADR[1]>=2) | AF >= 0.9)",
+        "bcftools_filter_minor" : "INFO/DP > 9 & AF >= 0.05"
+    },
+        
+    "gentsv_vcf" : {
+        "todo" : 1
+    },
+    
+    "genlist_countsummary" : {
+        "todo" : 1
+    },
+    
+    "genbed_bedtools" : {
+        "todo" : 1
+    },
+    
+    "genfasta_consensus" : {
+        "todo" : 1,
+        "min_depth" : 10,
+        "mask" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/WG/mask.bed"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/WG/mask.bed"]
+        ],
+        "maskwiden" : 0
+    },
+    
+    "gentsv_blast" : {
+        "todo" : 1,
+        "blastdb" : "/srv/scratch/iai/seqmet/db/blast/GOYA_221212_rsvab/GOYA_221212_rsvab",
+        "accid2title" : "/srv/scratch/iai/seqmet/db/blast/GOYA_221212_rsvab_accid2title.tsv",
+        "perc_identity" : 75,
+        "max_target_seqs" : 100,
+        "outfmt": "6 qseqid qlen qstart qend slen sstart send stitle sacc staxid evalue bitscore pident nident",
+        "sorting_field" : 13
+        },
+    
+    "gentable_variant" : {
+        "todo" : 1,
+        "gff" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573.gff3"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518.gff3"]
+        ],
+        "datatype" : "freq"
+    },
+    
+    "merge_variant" : {
+        "todo" : 1,
+        "level" : [0]
+    },
+    
+    "seek_contaminant" : {
+        "todo" : 1,
+        "af_field" : "AF",
+        "min_freq" : 0.05
+    },
+    
+    "seek_coinf" : {
+        "todo" : 1,
+        "af_field" : "AF",
+        "min_freq" : 0.05,
+        "min_depth" : 100,
+        "vcf" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/vcf/"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/vcf/"]
+        ]
+    },
+    
+    "merge_contaminant" : {
+        "todo" : 1
+    },
+    
+    "merge_depth" : {
+        "todo" : 1
+    },
+    
+    "merge_coverage" : {
+        "todo" : 1
+    },
+    
+    "merge_consensus" : {
+        "todo" : 1,
+        "accid2refid" : "/srv/scratch/iai/seqmet/db/sequencing/accid2refid.csv"
+    },
+    
+    "merge_blast" : {
+        "todo" : 1
+    },
+    
+    "gentsv_nextclade" : {
+        "todo" : 1,
+        "region" : "WG",
+        "dataset" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/nextclade/rsv_b/"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/nextclade/rsv_a/"]
+        ]
+    },
+    
+    "merge_covsummary" : {
+        "todo" : 1
+    },
+    
+    "merge_countsummary" : {
+        "todo" : 1
+    },
+    
+    "merge_fastqstat" : {
+        "todo" : 1
+    },
+    
+    "merge_bamstat" : {
+        "todo" : 1
+    },
+    
+    "merge_coinfsummary" : {
+        "todo" : 1
+    },
+    
+    "merge_poscsummary" : {
+        "todo" : 1
+    },
+    
+    "merge_veriftable" : {
+        "todo" : 1
+    },
+       
+    "gentsv_summary" : {
+        "todo" : 1
+    },
+    
+    "merge_summary" : {
+        "todo" : 1
+    },
+    
+    "gentree_fasttree" : {
+        "todo" : 0,
+        "phylogeny" : [
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/phylogeny/"],
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/phylogeny/"]
+        ]
+    },
+    
+    "gentsv_validation" : {
+        "todo" : 1,
+        "mode" : "rsv",
+        "varcount_threshold" : 110,
+        "dp_threshold" : 61,
+        "coinf_threshold" : 5.561,
+        "cov_minok" : 90,
+        "cov_maxneg" : 5,
+        "nextclade_version" : "(Nextclade v240801)",
+        "matrix" : [
+            ["KY654518", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518_rsva_mutmatrix_expected-240726.tsv", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518_rsva_mutmatrix_likely-240726.tsv", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518.gff3", "/srv/scratch/iai/seqmet/db/reference/rsv/KY654518/KY654518_poi.tsv"],
+            ["KM517573", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573_rsvb_mutmatrix_expected-240726.tsv", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573_rsvb_mutmatrix_likely-240726.tsv", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573.gff3", "/srv/scratch/iai/seqmet/db/reference/rsv/KM517573/KM517573_poi.tsv"]
+        ]
+    },
+    
+    "merge_fastfinder" : {
+        "todo" : 1
+    },
+        
+    "qc_covplot" : {
+        "todo" : 1
+    },
+    
+    "merge_covplot" :{
+        "todo" : 1,
+        "chunk" : 5
+    },
+    
+    "qc_multiqc" : {
+        "todo" : 1
+    }
+    
+    }
+    

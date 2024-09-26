@@ -1,0 +1,28 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region KM517573.1 1 15276
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11250
+KM517573|WG	Genbank	region	1	15276	.	+	.	ID=KM517573.1:1..15276;Dbxref=taxon:11250;collection-date=30-Jul-2013;country=China: Guangzhou;gb-acronym=HRSV;gbkey=Src;genome=genomic;mol_type=viral cRNA;nat-host=Homo sapiens;old-name=Human respiratory syncytial virus;strain=B/GZ/13-730;subtype=B
+KM517573|WG	Genbank	gene	100	519	.	+	.	ID=gene-KM517573.1:100..519;gene=NS1;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	100	519	.	+	0	ID=cds-AIY62421.1;Parent=gene-KM517573.1:100..519;gene=NS1;Dbxref=NCBI_GP:AIY62421.1;Name=AIY62421.1;gbkey=CDS;product=non-structural protein 1;protein_id=AIY62421.1
+KM517573|WG	Genbank	gene	627	1001	.	+	.	ID=gene-KM517573.1:627..1001;gene=NS2;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	627	1001	.	+	0	ID=cds-AIY62422.1;Parent=gene-KM517573.1:627..1001;gene=NS2;Dbxref=NCBI_GP:AIY62422.1;Name=AIY62422.1;gbkey=CDS;product=non-structural protein 2;protein_id=AIY62422.1
+KM517573|WG	Genbank	gene	1140	2315	.	+	.	ID=gene-KM517573.1:1140..2315;gene=N;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	1140	2315	.	+	0	ID=cds-AIY62423.1;Parent=gene-KM517573.1:1140..2315;gene=N;Dbxref=NCBI_GP:AIY62423.1;Name=AIY62423.1;gbkey=CDS;product=nucleocapsid protein;protein_id=AIY62423.1
+KM517573|WG	Genbank	gene	2348	3073	.	+	.	ID=gene-KM517573.1:2348..3073;gene=P;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	2348	3073	.	+	0	ID=cds-AIY62424.1;Parent=gene-KM517573.1:2348..3073;gene=P;Dbxref=NCBI_GP:AIY62424.1;Name=AIY62424.1;gbkey=CDS;product=phosphoprotein;protein_id=AIY62424.1
+KM517573|WG	Genbank	gene	3263	4033	.	+	.	ID=gene-KM517573.1:3263..4033;gene=M;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	3263	4033	.	+	0	ID=cds-AIY62425.1;Parent=gene-KM517573.1:3263..4033;gene=M;Dbxref=NCBI_GP:AIY62425.1;Name=AIY62425.1;gbkey=CDS;product=matrix protein;protein_id=AIY62425.1
+KM517573|WG	Genbank	gene	4302	4499	.	+	.	ID=gene-KM517573.1:4302..4499;gene=SH;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	4302	4499	.	+	0	ID=cds-AIY62426.1;Parent=gene-KM517573.1:4302..4499;gene=SH;Dbxref=NCBI_GP:AIY62426.1;Name=AIY62426.1;gbkey=CDS;product=small hydrophobic protein;protein_id=AIY62426.1
+KM517573|WG	Genbank	gene	4689	5621	.	+	.	ID=gene-KM517573.1:4689..5621;gene=G;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	4689	5621	.	+	0	ID=cds-AIY62427.1;Parent=gene-KM517573.1:4689..5621;gene=G;Dbxref=NCBI_GP:AIY62427.1;Name=AIY62427.1;gbkey=CDS;product=attachment glycoprotein;protein_id=AIY62427.1
+KM517573|WG	Genbank	gene	5719	7443	.	+	.	ID=gene-KM517573.1:5719..7443;gene=F;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	5719	7443	.	+	0	ID=cds-AIY62428.1;Parent=gene-KM517573.1:5719..7443;gene=F;Dbxref=NCBI_GP:AIY62428.1;Name=AIY62428.1;gbkey=CDS;product=fusion glycoprotein;protein_id=AIY62428.1
+KM517573|WG	Genbank	gene	7670	8257	.	+	.	ID=gene-KM517573.1:7670..8257;gene=M2-1;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	7670	8257	.	+	0	ID=cds-AIY62429.1;Parent=gene-KM517573.1:7670..8257;gene=M2-1;Dbxref=NCBI_GP:AIY62429.1;Name=AIY62429.1;gbkey=CDS;product=transcription elongation factor M2-1;protein_id=AIY62429.1
+KM517573|WG	Genbank	gene	8223	8495	.	+	.	ID=gene-KM517573.1:8223..8495;gene=M2-2;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	8223	8495	.	+	0	ID=cds-AIY62430.1;Parent=gene-KM517573.1:8223..8495;gene=M2-2;Dbxref=NCBI_GP:AIY62430.1;Name=AIY62430.1;gbkey=CDS;product=transcription-replication factor M2-2;protein_id=AIY62430.1
+KM517573|WG	Genbank	gene	8561	15061	.	+	.	ID=gene-KM517573.1:8561..15061;gene=L;gbkey=Gene;gene_biotype=protein_coding
+KM517573|WG	Genbank	CDS	8561	15061	.	+	0	ID=cds-AIY62431.1;Parent=gene-KM517573.1:8561..15061;gene=L;Dbxref=NCBI_GP:AIY62431.1;Name=AIY62431.1;gbkey=CDS;product=RNA-directed RNA polymerase L;protein_id=AIY62431.1

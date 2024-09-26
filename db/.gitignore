@@ -1,0 +1,10 @@
+# Ignore these files
+bbmap
+blast
+bowtie2
+build
+fastqscreen
+kraken2
+ncbitax2lin
+pangolin
+vcf

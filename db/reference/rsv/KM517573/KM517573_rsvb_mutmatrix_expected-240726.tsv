@@ -1,0 +1,143 @@
+change	ABSCLADE__	ININT__	recombinant__	__B	__B.2	__B.3	__B.D	__B.D.1	__B.D.1.1	__B.D.3	__B.D.4	__B.D.4.1	__B.D.4.1.1	__B.D.E.1	__B.D.E.2	__B.D.E.3	__B.D.E.4
+F:A19									T							V	
+F:L45				F	F			F	F								
+F:V103				A				A	A	A							
+F:K123										G							
+F:N124										S							
+F:Q172				L	L	L	L	L	L	L							
+F:L173				S	S	S		S	S	S	S						
+F:S190														N			
+F:R191				K	K	K	K	K	K	K	K	K					
+F:M206				I	I	I	I	I	I	I	I	I					
+F:R209					Q	Q	Q	Q	Q	Q		Q					
+F:S211														N			
+F:S389														P			
+F:M526																V	
+F:A529					T												
+G:N4					H												
+G:K32					R	R											
+G:A74				V	V	V	V	V		V	V	V	V	V	V	V	V
+G:T75									S								
+G:Q77						S											
+G:I87										T							
+G:S100														G			
+G:P101					S												
+G:Q104																H	
+G:A107				T	T	T	T	T	T	T							
+G:P109					S	S											
+G:I118					T												
+G:H128																Y	
+G:T131					A	A		A	A	A	A	A		A			
+G:G135																S	S
+G:T136				R	R	R	R	R	R	R	R						
+G:I137					T	T	T	T		T		T		T			
+G:S138				T	T	T											F
+G:P140					S												
+G:T141																K	
+G:N143					T	T											
+G:N154						I											
+G:N176															S		
+G:T198				I	I	I			I	I							
+G:P204									T								
+G:P205					T	T											
+G:P214														S			
+G:L217					P				P	P							
+G:P221					T	L								L			
+G:E224									D								
+G:I227				T	T	T			T								
+G:P235					L												
+G:I252				-	-	-	T	T	T	T	T			T			
+G:T253				-	-	-											
+G:T254				-	-	-											
+G:S255				-	-	-											
+G:K256				-	-	-											
+G:H257				-	-	-											
+G:T258				-	-	-											
+G:E259				-	-	-											
+G:R260				-	-	-											
+G:D261				-	-	-											
+G:T262				-	-	-											
+G:S263				-	-	-											
+G:T264				-	-	-											
+G:S265				-	-	-											
+G:Q266				-	-	-											
+G:S267				-	-	-											
+G:I268				-	-	-				T				T			
+G:A269				-		-		V	V						V		
+G:L270				-		-											
+G:D271				-		-											
+G:S275														P			
+G:T279									I	I							
+G:Y285				H	H	H			H	H				H			
+G:I288				T	T	T	T	T	T	T	T	T					
+G:E290								G	G								
+G:P299										S							
+G:T300																	A
+G:E303																	G
+G:I310				T	T	T	T	T	T	T							
+G:*311						Q											
+Ins:4034					A												
+Ins:5119				CCAAAA		CCAAAA											
+Ins:7582						C											
+L:S8					N	N											
+L:I56				L	L	L	L	L	L	L							
+L:M59									I								
+L:V164																	M
+L:Y177					H	H											
+L:N184					T												
+L:V309																	L
+L:D374						N											
+L:K570														R			
+L:V715				I	I	I	I	I	I	I	I						
+L:I824																	M
+L:T973					M	M											
+L:G1250					S	S			S								
+L:A1479				V	V	V	V	V	V	V	V	V					
+L:A1489										V							T
+L:R1547					K												
+L:I1588										L							
+L:N1593								S	S								
+L:H1707															N		
+L:A1712				T	T	T	T	T	T	T	T						
+L:V1716						M	I	I	I	I	I						
+L:R1726					S	S											
+L:C1732																	Y
+L:S1736				N	N	N	N	N	N	N							
+L:T1742					M												
+L:R1759														K			
+L:R1764					K												
+L:E1787				A	A												
+L:V1965																A	
+L:T1987				I	I	I	I	I	I	I	I	I		I		I	I
+L:I2042					T												
+L:N2065					K	K											
+L:L2162						I											
+L:N2164									S								
+M:T89					I	I		I	I								
+M2-1:S142				N	N	N											
+M2-1:I181				V	V	V		V	V	V							
+M2-1:S182					N												
+M2-1:T188										P							
+M2-2:I2				T	T	T	T	T	T	T	T	T	T	T	T	T	T
+M2-2:K3										N							
+M2-2:M27														T			
+M2-2:D35					N									N			
+M2-2:H43										Y							
+M2-2:C49					R				W					F			
+N:V97				I	I	I	I	I	I	I	I	I	I	I	I	I	I
+N:Y216				H	H	H	H	H	H	H							
+N:I303															V		
+N:T372				A	A	A											
+NS1:T45					A	A											
+NS1:I105				M	M	M											
+NS1:D124					N												
+NS1:H138						N											
+NS2:M1																V	
+NS2:T4										K							
+NS2:K80										T							
+NS2:T82								S	S								
+P:N61																	T
+P:I63									V								
+SH:I49						T		T	T	T							
+SH:Q57					L												
+SH:D64				N	N	N	N	N	N	N	N						

@@ -1,0 +1,15 @@
+Bootstrap: docker
+From: nextstrain/nextclade:2.13.1
+
+%help
+    SUMMARY
+    Singularity container made from the official Docker container.
+    KNOWN BUGS
+    None
+    USAGE
+    Viral genome clade assignment, mutation calling, and sequence quality checks.
+
+%labels
+    Version 2.13.1
+    Author boyerth
+    Date 2023-04-17

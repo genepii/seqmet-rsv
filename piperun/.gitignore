@@ -1,0 +1,32 @@
+# Ignore everything in this directory
+*
+# Except these files
+!.gitignore
+!launch_piperun.sh
+!launch_piperun_debug.sh
+!launch_piperun_hsv12.sh
+!launch_piperun_rsv.sh
+!000000_ILL_seqmet_denovo_15672
+!000000_ILL_seqmet_denovo_16206
+!000000_ILL_seqmet_varcall_fluabv
+!000000_ILL_seqmet_varcall_hmpxv
+!000000_ILL_seqmet_varcall_hsv12
+!000000_ILL_seqmet_varcall_ncov
+!000000_ILL_seqmet_varcall_vzv
+!000000_ILL_seqmet_varcall_18913
+!000000_ILL_seqmet_denovo_21135
+!000000_ONT_seqmet_longread_29298
+!000000_ILL_seqmet-dc5c31b_varcall_hsv12
+!000000_ILL_seqmet_denovo_rsv
+!000000_ILL_seqmet_denovo_15672/params_01.json
+!000000_ILL_seqmet_denovo_16206/params_01.json
+!000000_ILL_seqmet_varcall_fluabv/params_01.json
+!000000_ILL_seqmet_varcall_hmpxv/params_01.json
+!000000_ILL_seqmet_varcall_hsv12/params_01.json
+!000000_ILL_seqmet_varcall_ncov/params_01.json
+!000000_ILL_seqmet_varcall_vzv/params_01.json
+!000000_ILL_seqmet_varcall_18913/params_01.json
+!000000_ILL_seqmet_denovo_21135/params_01.json
+!000000_ONT_seqmet_longread_29298/params_01.json
+!000000_ILL_seqmet-dc5c31b_varcall_hsv12/params_01.json
+!000000_ILL_seqmet_denovo_rsv/params_01.json
