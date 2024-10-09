@@ -3,10 +3,6 @@
 // enable dsl2
 nextflow.enable.dsl = 2
 
-// include modules
-include {printHelp} from "${params.nfpath}/nextflow/modules/help.nf"
-include {makeFastqSearchPath} from "${params.nfpath}/nextflow/modules/util.nf"
-
 // import subworkflows
 include {denovo} from "${params.nfpath}/nextflow/workflows/workflow_rsv.nf"
 
