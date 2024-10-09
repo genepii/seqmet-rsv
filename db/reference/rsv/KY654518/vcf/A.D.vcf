@@ -1,0 +1,71 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.15+htslib-1.14
+##bcftoolsCommand=mpileup -f KY654518.fna --annotate INFO/AD,INFO/ADF,INFO/ADR,FORMAT/AD,FORMAT/ADF,FORMAT/ADR,FORMAT/SP -A --max-depth 20000 --min-MQ 0 --min-BQ 0 --max-BQ 60 --ambig-reads drop --ext-prob 20 --gap-frac 0 --indel-bias 1.0 --indel-size 5000 --max-idepth 10000000 --min-ireads 1 --max-read-len 500 --open-prob 40 -Ov A.D.bam
+##reference=file://KY654518.fna
+##contig=<ID=KY654518|WG,length=15277>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=SP,Number=1,Type=Integer,Description="Phred-scaled strand bias P-value">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths (high-quality bases)">
+##FORMAT=<ID=ADF,Number=R,Type=Integer,Description="Allelic depths on the forward strand (high-quality bases)">
+##FORMAT=<ID=ADR,Number=R,Type=Integer,Description="Allelic depths on the reverse strand (high-quality bases)">
+##INFO=<ID=AD,Number=R,Type=Integer,Description="Total allelic depths (high-quality bases)">
+##INFO=<ID=ADF,Number=R,Type=Integer,Description="Total allelic depths on the forward strand (high-quality bases)">
+##INFO=<ID=ADR,Number=R,Type=Integer,Description="Total allelic depths on the reverse strand (high-quality bases)">
+##bcftools_filterVersion=1.15+htslib-1.14
+##bcftools_filterCommand=filter -i 'SUM(FORMAT/AD[0:1-]) >= 2 & (SUM(FORMAT/AD[0:1-]))/((SUM(FORMAT/AD[0:1-])+(FORMAT/AD[0:0]))) >= 0.01'; Date=Tue Jul 30 10:05:32 2024
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.15+htslib-1.14
+##bcftools_callCommand=call --threads 1 --keep-alts --multiallelic-caller --ploidy 1 --prior 0 -Ob; Date=Tue Jul 30 10:05:32 2024
+##bcftools_annotateVersion=1.15+htslib-1.14
+##bcftools_annotateCommand=annotate --remove INFO/INDEL -; Date=Tue Jul 30 10:06:15 2024
+##FORMAT=<ID=VAF,Number=A,Type=Float,Description="The fraction of reads with alternate allele (nALT/nSumAll)">
+##FORMAT=<ID=VAF1,Number=1,Type=Float,Description="The fraction of reads with alternate alleles (nSumALT/nSumAll)">
+##bcftools_pluginVersion=1.15+htslib-1.14
+##bcftools_pluginCommand=plugin fill-tags -Ob -- - -t FORMAT/VAF,FORMAT/VAF1; Date=Tue Jul 30 10:06:15 2024
+##INFO=<ID=RAF,Number=.,Type=Float,Description="Added by +fill-tags expression RAF=1.0-(FORMAT/VAF1)">
+##bcftools_pluginCommand=plugin fill-tags -Ov -o work/A.D.vcf -- - -t RAF=1.0-(FORMAT/VAF1); Date=Tue Jul 30 10:06:15 2024
+##INFO=<ID=OLD_MULTIALLELIC,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_VARIANT,Number=.,Type=String,Description="Original chr:pos:ref:alt encoding">
+##recalc_bcftoolsvcf="Reference as minor variant, INFO/VAF and INFO/TYPE added"
+##INFO=<ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+##INFO=<ID=AF,Number=A,Type=Float,Description="The fraction of reads with alternate allele (nALT/nSumAll)">
+##INFO=<ID=REVERSED,Number=A,Type=String,Description="Indicates that the reference is found as a minor variant.">
+##bcftools_filterCommand=filter -i 'AF > 0.5 & INFO/DP > 1266.66*0.9 & AF >= 0.05' work/KY654518/A.D.vcf; Date=Tue Jul 30 10:09:08 2024
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	A.D.bam
+KY654518|WG	1601	.	A	T	258.007	PASS	TYPE=snp;AF=0.996863;DP=1275;ADF=4,1271;ADR=0,0;AD=4,1271;VDB=0;SGB=-0.693147;RPBZ=-0.341309;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=4,0,1271,0;MQ=60;RAF=0.00313723	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:4,1271:0,0:4,1271:0.996863:0.996863
+KY654518|WG	1730	.	C	T	258.005	PASS	TYPE=snp;AF=0.996078;DP=1275;ADF=5,1270;ADR=0,0;AD=5,1270;VDB=0;SGB=-0.693147;RPBZ=0.329906;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=5,0,1270,0;MQ=60;RAF=0.00392157	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:5,1270:0,0:5,1270:0.996078:0.996078
+KY654518|WG	2621	.	T	C	257.935	PASS	TYPE=snp;AF=0.963922;DP=1275;ADF=46,1229;ADR=0,0;AD=46,1229;VDB=0;SGB=-0.693147;RPBZ=-4.68544;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=46,0,1229,0;MQ=60;RAF=0.0360785	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:46,1229:0,0:46,1229:0.963922:0.963922
+KY654518|WG	3560	.	A	G	260.978	PASS	TYPE=snp;AF=0.978824;DP=1275;ADF=25,1248;ADR=0,0;AD=25,1248;VDB=0;SGB=-0.693147;RPBZ=-0.285297;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=25,0,1250,0;MQ=60;RAF=0.0196078;OLD_MULTIALLELIC=KY654518|WG:3560:A/G/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:25,1248:0,0:25,1248:0.978824:0.980392
+KY654518|WG	3938	.	C	T	260.758	PASS	TYPE=snp;AF=0.881476;DP=1275;ADF=149,1123;ADR=0,0;AD=149,1123;VDB=0;SGB=-0.693147;RPBZ=-1.42808;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=149,0,1126,0;MQ=60;RAF=0.116954;OLD_MULTIALLELIC=KY654518|WG:3938:C/T/A	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:149,1123:0,0:149,1123:0.881476:0.883046
+KY654518|WG	4749	.	G	A	59.4305	PASS	TYPE=snp;AF=0.748235;DP=1275;ADF=309,954;ADR=0,0;AD=309,954;VDB=0;SGB=-0.693147;RPBZ=2.28507;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=309,0,966,0;MQ=60;RAF=0.242353;OLD_MULTIALLELIC=KY654518|WG:4749:G/A/C	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,201:0:309,954:0,0:309,954:0.748235:0.757647
+KY654518|WG	5397	.	C	T	145.533	PASS	TYPE=snp;AF=0.791209;DP=1275;ADF=266,1008;ADR=0,0;AD=266,1008;VDB=0;SGB=-0.693147;RPBZ=-0.298463;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=266,0,1009,0;MQ=60;RAF=0.208791	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,112:0:266,1008:0,0:266,1008:0.791209:0.791209
+KY654518|WG	5603	.	G	A	261.02	PASS	TYPE=snp;AF=0.998424;DP=1275;ADF=1,1267;ADR=0,0;AD=1,1267;VDB=0;SGB=-0.693147;RPBZ=0.164491;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=1,0,1274,0;MQ=60;RAF=0.000788033;OLD_MULTIALLELIC=KY654518|WG:5603:G/A/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:1,1267:0,0:1,1267:0.998424:0.999212
+KY654518|WG	7589	.	G	A	121.505	PASS	TYPE=snp;AF=0.779889;DP=1275;ADF=278,985;ADR=0,0;AD=278,985;VDB=0;SGB=-0.693147;RPBZ=2.32559;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=278,0,997,0;MQ=60;RAF=0.220111	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,136:0:278,985:0,0:278,985:0.779889:0.779889
+KY654518|WG	8001	.	A	C	260.981	PASS	TYPE=snp;AF=0.980392;DP=1275;ADF=22,1250;ADR=0,0;AD=22,1250;VDB=0;SGB=-0.693147;RPBZ=0.454813;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=22,0,1253,0;MQ=60;RAF=0.0172549;OLD_MULTIALLELIC=KY654518|WG:8001:A/C/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:22,1250:0,0:22,1250:0.980392:0.982745
+KY654518|WG	8087	.	G	A	258.005	PASS	TYPE=snp;AF=0.996078;DP=1275;ADF=5,1270;ADR=0,0;AD=5,1270;VDB=0;SGB=-0.693147;RPBZ=1.1607;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=5,0,1270,0;MQ=60;RAF=0.00392157	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:5,1270:0,0:5,1270:0.996078:0.996078
+KY654518|WG	9728	.	A	G	258.012	PASS	TYPE=snp;AF=0.999216;DP=1275;ADF=1,1274;ADR=0,0;AD=1,1274;VDB=0;SGB=-0.693147;RPBZ=0.421024;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=1,0,1274,0;MQ=60;RAF=0.000784338	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:1,1274:0,0:1,1274:0.999216:0.999216
+KY654518|WG	10564	.	A	G	257.995	PASS	TYPE=snp;AF=0.991373;DP=1275;ADF=11,1264;ADR=0,0;AD=11,1264;VDB=0;SGB=-0.693147;RPBZ=-1.30479;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=11,0,1264,0;MQ=60;RAF=0.00862747	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:11,1264:0,0:11,1264:0.991373:0.991373
+KY654518|WG	10891	.	T	C	260.829	PASS	TYPE=snp;AF=0.913725;DP=1275;ADF=34,1165;ADR=0,0;AD=34,1165;VDB=0;SGB=-0.693147;RPBZ=-1.83817;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=34,0,1241,0;MQ=60;RAF=0.0266666;OLD_MULTIALLELIC=KY654518|WG:10891:T/C/A	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:34,1165:0,0:34,1165:0.913725:0.973333
+KY654518|WG	11063	.	A	T	260.993	PASS	TYPE=snp;AF=0.985882;DP=1275;ADF=15,1257;ADR=0,0;AD=15,1257;VDB=0;SGB=-0.693147;RPBZ=-0.768995;MQBZ=0;BQBZ=0;SCBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=15,0,1260,0;MQ=60;RAF=0.0117647;OLD_MULTIALLELIC=KY654518|WG:11063:A/T/C	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:15,1257:0,0:15,1257:0.985882:0.988235
+KY654518|WG	12028	.	A	C	260.972	PASS	TYPE=snp;AF=0.976471;DP=1275;ADF=16,1245;ADR=0,0;AD=16,1245;VDB=0;SGB=-0.693147;RPBZ=-1.68981;MQBZ=0;BQBZ=0;SCBZ=0.15949;FS=0;MQ0F=0;AC=1;AN=1;DP4=16,0,1259,0;MQ=60;RAF=0.012549;OLD_MULTIALLELIC=KY654518|WG:12028:A/C/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:16,1245:0,0:16,1245:0.976471:0.987451
+KY654518|WG	13342	.	A	G	257.983	PASS	TYPE=snp;AF=0.985882;DP=1275;ADF=18,1257;ADR=0,0;AD=18,1257;VDB=0;SGB=-0.693147;RPBZ=0.364208;MQBZ=0;BQBZ=0;SCBZ=0.293696;FS=0;MQ0F=0;AC=1;AN=1;DP4=18,0,1257,0;MQ=60;RAF=0.0141177	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,0:0:18,1257:0,0:18,1257:0.985882:0.985882
+KY654518|WG	13423	.	A	G	9.03101	PASS	TYPE=snp;AF=0.518431;DP=1275;ADF=599,661;ADR=0,0;AD=599,661;VDB=0;SGB=-0.693147;RPBZ=-3.02654;MQBZ=0;BQBZ=0;SCBZ=1.7373;FS=0;MQ0F=0;AC=1;AN=1;DP4=599,0,676,0;MQ=60;RAF=0.469804;OLD_MULTIALLELIC=KY654518|WG:13423:A/G/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,255:0:599,661:0,0:599,661:0.518431:0.530196
+KY654518|WG	13734	.	G	A	9.03101	PASS	TYPE=snp;AF=0.604724;DP=1271;ADF=501,768;ADR=0,0;AD=501,768;VDB=0;SGB=-0.693147;RPBZ=-2.086;MQBZ=0;BQBZ=0;SCBZ=0.582528;FS=0;MQ0F=0;AC=1;AN=1;DP4=501,0,770,0;MQ=60;RAF=0.394488;OLD_MULTIALLELIC=KY654518|WG:13734:G/A/T	GT:PL:SP:ADF:ADR:AD:VAF:VAF1	1:255,255:0:501,768:0,0:501,768:0.604724:0.605512
